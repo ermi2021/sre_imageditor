@@ -5,10 +5,10 @@ const theme = {
   // sre logo
   "common.bi.image": "https://sreglobal.com/images/logo.png",
   "common.bisize.width": "150px",
-  "common.bisize.height": "100px",
-  "common.backgroundColor": "#1E1C3E",
-  "submenu.backgroundColor": "transparent",
-  "submenu.partition.color": "black",
+  "common.bisize.height": "80px",
+  "common.backgroundColor": "#EDC7B7",
+  "submenu.backgroundColor": "#AC3B61",
+  "submenu.partition.color": "#AC3B61",
   "submenu.marginTop": "25px",
 
   // load button
@@ -20,27 +20,23 @@ const theme = {
   "loadButton.borderRadius": "0px",
   "loadButton.marginTop": "45px",
   "loadButton.marginRight": "15px",
+  "loadButton.marginBottom": "60px",
 
   // download button
   "downloadButton.marginTop": "45px",
   "downloadButton.borderRadius": "0px",
-
+  "downloadButton.marginBottom": "60px",
   // header
   "header.backgroundImage": "none",
-  "header.backgroundColor": "transparent",
+  "header.backgroundColor": "#AC3B61",
   "header.border": "3px",
   "header.position": "absolute",
   "header.bottom": "0",
   "header.height": "fit-content",
+  "header.marginBottom": "40px",
 };
 const CustomImageEditor = () => {
   const editorRef = React.createRef();
-
-  const handleClickButton = () => {
-    const editorInstance = editorRef.current.getInstance();
-
-    editorInstance.flipX();
-  };
 
   return (
     <>
@@ -54,7 +50,7 @@ const CustomImageEditor = () => {
           initMenu: "filter",
           uiSize: {
             width: "100%",
-            height: "80vh",
+            height: "90vh",
           },
           menuBarPosition: "right",
         }}
@@ -66,7 +62,6 @@ const CustomImageEditor = () => {
         }}
         usageStatstics={true}
       />
-      <button onClick={handleClickButton}>Flip image by X Axis!</button>
     </>
   );
 };

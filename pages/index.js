@@ -41,12 +41,18 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        Made by Ermiyas for{" "}
-        <span className={styles.logo}>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            S.R.E
-          </Typography>
-        </span>
+        <Typography
+          variant="h6"
+          sx={{
+            color: "#2E1114",
+            fontWeight: "bold",
+            textAlign: "left",
+          }}
+          component="div"
+          gutterBottom
+        >
+          Made with ❤️ by Ermiyas Zeleke
+        </Typography>
       </footer>
     </div>
   );

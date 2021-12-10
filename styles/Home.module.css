@@ -1,10 +1,11 @@
 .container {
   padding: 0 0rem;
-  background-color: #1E1C3E;
+  background-color: #EDC7B7;
 }
 
 .main {
   min-height: 120vh;
+  background-color: #EDC7B7;
   /* padding: 4rem 0; */
   /* flex: 1;
   display: flex;
@@ -24,8 +25,8 @@
 
 .mainContainer {
   min-height: 100vh; 
-  /* margin-top: 4rem;  */
-  background-color: #1E1C3E;
+  margin-top: 1rem; 
+  background-color: #EDC7B7;
 }
 .mainGrid {
   min-height: 100vh; 
